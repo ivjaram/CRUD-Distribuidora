@@ -14,41 +14,64 @@ include 'get.php';
 	<meta charset="utf-8">
 </head>
 <body>
+	
 	<div class="volver">
 		<form action="../index.html">
 		<a href="http://localhost/CRUD-Distribuidora/"><buttons type="submit" class="btn btn-warning">Volver</button></a>
 		</form>
 	</div>
 	<div class="Formulario">
-  	 	<hgroup><h1>Formulario</h1>
- 		<form name="envia_get_frm" action="post.php" method="Post">
- 				
- 			<!-- Elementos de mi formulario  -->
- 			<!-- <label>Codigo de producto: </label>
- 			<input type="text" name="proveedor_txt" value="<?php echo $datos['id_proveedor'] ?>">
- 			<br></br> -->
- 			<label>Nombre de Proveedor </label>
- 			<input type="text" name="nombre_proveedor_txt" value="<?php echo $datos['nombre_proveedor'] ?>">
- 			<br></br>
- 			<label>Ingrese Direccion: </label>
- 			<input type="text" name="direccion_txt" value="<?php echo $datos['direccion'] ?>">
- 			<br></br>
- 			<label>Ingrese Telefono: </label>
- 			<input type="text" name="telefono_txt" value="<?php echo $datos['telefono'] ?>">
- 			<br></br>
- 			<input type="hidden" name="id_proveedor" value="<?php echo $datos['id_proveedor'] ?>">
- 			<input type="hidden" name="accion" value="<?php echo $accion?>">
-			 
- 			<input type="submit" class="btn btn-success" name="submit" value="Guardar">
- 		</form> 		
- 	</hgroup>
-	 </div>
+		<div class="fondo">
+		<div class="cosa">
+			<hgroup><h1>Proveedores</h1>
+			<form name="envia_get_frm" action="post.php" method="Post">
+					
+				<!-- Elementos de mi formulario  -->
+				<!-- <label>Codigo de producto: </label>
+				<input type="text" name="proveedor_txt" value="<?php echo $datos['id_proveedor'] ?>">
+				<br></br> -->
+				<label>Nombre de Proveedor </label>
+				<input type="text" name="nombre_proveedor_txt" value="<?php echo $datos['nombre_proveedor'] ?>">
+				<br></br>
+				<label>Ingrese Direccion: </label>
+				<input type="text" name="direccion_txt" value="<?php echo $datos['direccion'] ?>">
+				<br></br>
+				<label>Ingrese Telefono: </label>
+				<input type="text" name="telefono_txt" value="<?php echo $datos['telefono'] ?>">
+				<br></br>
+				<input type="hidden" name="id_proveedor" value="<?php echo $datos['id_proveedor'] ?>">
+				<input type="hidden" name="accion" value="<?php echo $accion?>">
+				
+				<input type="submit" class="btn btn-success" name="submit" value="Guardar">
+			</form> 		
+			</hgroup>
+		</div>
+		</div>
+	</div>
 <br>
 <?php include 'tabla.php'; ?>
 </body>
 </html>
 <style>
+	body{
+		background: url(../img/ventas.png);
+	}
+	.cosa{
+		text-align: center;
+		background:white;
+		width: 45%;
+		border-radius:50%;
+	}
 	.formulario{
 		text-align: center;
+		background-position: center center;
+		
+		background-attachment: fixed;
+		background-size: cover;
+
+	}
+	.volver{
+		padding: 30px;
+		
 	}
 </style>

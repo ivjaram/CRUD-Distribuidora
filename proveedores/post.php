@@ -1,6 +1,6 @@
 <?php
 
-include 'class_proveedor.php';
+include 'class_proveedores.php';
 //include '../bd.php';
 
 //$db = new conexion();
@@ -16,9 +16,9 @@ if (isset($_POST['submit']))
 		
 		
 		//instanciar nuestra clase
-		$producto = new proveedor($id_proveedor, $nombre_proveedor,$direccion,$telefono);
+		$proveedor = new proveedor($id_proveedor, $nombre_proveedor,$direccion,$telefono);
 		//ejecutar el método insert
-		$producto-> insert();
+		$proveedor-> insert();
 		
 	}
 
@@ -32,9 +32,9 @@ if (isset($_POST['submit']))
 			
 			
 			//instanciar nuestra clase
-			$producto = new proveedor($id_proveedor, $nombre_proveedor,$direccion,$telefono);
+			$proveedor = new proveedor($id_proveedor, $nombre_proveedor,$direccion,$telefono);
 			//ejecutar el método update
-			$producto-> update();
+			$proveedor-> update();
 			
 		}	
 }

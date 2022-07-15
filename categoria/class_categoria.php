@@ -20,7 +20,7 @@ class Categoria
 		return new self('','');
 	}
 	
-	static function soloCod($id_producto)
+	static function soloCod($id_categoria)
 	{
 			return new self('',$id_categoria);
 	}

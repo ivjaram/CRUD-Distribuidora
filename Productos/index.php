@@ -20,12 +20,16 @@ include 'get.php';
 		</form>
 	</div>
 	<div class="Formulario">
-  	 	<hgroup><h1>Formulario</h1>
- 		<form name="envia_get_frm" action="post.php" method="Post">
+		<div class="fondo">
+			<div class="cosa">
+
+			
+  	 	<hgroup><h1>Productos</h1>
+ 		<form name="envia_get_frm" action="post.php" method="POST">
  				
  			<!-- Elementos de mi formulario  -->
- 			<!-- <label>Codigo de producto: </label>
- 			<input type="text" name="producto_txt" value="<?php echo $datos['id_producto'] ?>">
+ 			<!-- <label>Codigo de producto: </label> -->
+ 			<!-- <input type="text" name="productotxt" value="<?php echo $datos['id_producto'] ?>">
  			<br></br> -->
  			<label>Nombre de producto </label>
  			<input type="text" name="nombre_producto_txt" value="<?php echo $datos['nombre_producto'] ?>">
@@ -46,6 +50,8 @@ include 'get.php';
  		</form> 		
  	</hgroup>
 	 </div>
+		</div>
+	 </div>
 <br>
 	<div class="tabla col-12">
 		<?php include 'tabla.php'; ?>
@@ -55,5 +61,23 @@ include 'get.php';
 <style>
 	.formulario{
 		text-align: center;
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
 	}
+	body{
+		background: url(../img/product.png);
+	}
+	.cosa{
+		text-align: center;
+		background:white;
+		width: 45%;
+		border-radius:50%;
+	}
+	.volver{
+		padding: 30px;
+		
+	}
+
+
 </style>

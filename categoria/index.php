@@ -21,7 +21,11 @@ include 'get.php';
 	</div>
 	
 	<div class="Formulario">
-  	 	<hgroup><h1>Formulario</h1>
+		<div class="fondo">
+			<div class="cosa">
+
+			
+  	 	<hgroup><h1>Categoria</h1>
  		<form name="envia_get_frm" action="post.php" method="Post">
  				
  			<!-- Elementos de mi formulario  -->
@@ -38,12 +42,32 @@ include 'get.php';
  		</form> 		
  	</hgroup>
 	 </div>
+		</div>
+	 </div>
 <br>
 <?php include 'tabla.php'; ?>
 </body>
 </html>
 <style>
+	body{
+		background: url(../img/morado.png);
+	}
+	.cosa{
+		text-align: center;
+		background:white;
+		width: 45%;
+		border-radius:50%;
+	}
 	.formulario{
 		text-align: center;
+		background-position: center center;
+		
+		background-attachment: fixed;
+		background-size: cover;
+
+	}
+	.volver{
+		padding: 30px;
+		
 	}
 </style>

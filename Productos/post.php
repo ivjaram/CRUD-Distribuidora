@@ -9,7 +9,7 @@ if (isset($_POST['submit']))
 {
 	if ($_POST['accion'] == 'insert')
 	{
-		$id_producto = $_POST['producto_txt'];
+		$id_producto = $_POST['productotxt'];
 		$nombre_producto = $_POST['nombre_producto_txt'];
 		$precio = $_POST['precio_txt'];
 		$cantidad = $_POST['cantidad_txt'];
@@ -25,7 +25,7 @@ if (isset($_POST['submit']))
 	//Actualizar
 	if ($_POST['accion'] == 'update'){
 
-			$id_producto = $_POST['producto_txt'];
+			$id_producto = $_POST['productotxt'];
 			$nombre_producto = $_POST['nombre_producto_txt'];
 			$precio = $_POST['precio_txt'];
 			$cantidad = $_POST['cantidad_txt'];

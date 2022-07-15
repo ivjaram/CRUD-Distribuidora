@@ -46,7 +46,8 @@ class Producto
 		$db = new conexion();
 		$id_producto = $_POST['id_producto'];
 	
-		$sql = "UPDATE `productos` SET `nombre_producto`='$this->nombre_producto',`precio`='$this->precio',`cantidad`=$this->cantidad,`categoria`=$this->categoria WHERE `id_producto` = '$id_producto'";
+		//$sql = "UPDATE `productos` SET `nombre_producto`='$this->nombre_producto',`precio`='$this->precio',`cantidad`=$this->cantidad,`categoria`=$this->categoria WHERE `id_producto` = '$id_producto'";
+		$sql ="UPDATE `productos` SET `nombre_producto`='$this->nombre_producto',`precio`='$this->precio',`cantidad`='$this->cantidad',`categoria`='$this->categoria' WHERE `id_producto` = '$id_producto'";
 
 		$db->query($sql) ? header("location: index.php?res=editado") : header("location: index.php?res=error");
 	}

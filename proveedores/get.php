@@ -23,7 +23,7 @@ if ((isset($_GET['accion'])) && (isset($_GET['id_proveedor'])) && ($_GET['accion
 if ((isset($_GET['accion'])) && (isset($_GET['id_proveedor'])) && ($_GET['accion'] == 'eliminar'))
 {
 	$id_proveedor = $_GET['id_proveedor'];
-	$id_proveedor = proveedor::solocod($id_proveedor);
+	$proveedor = proveedor::solocod($id_proveedor);
 
 	//llama a la funcion eliminar
 	$array = $proveedor->delete();

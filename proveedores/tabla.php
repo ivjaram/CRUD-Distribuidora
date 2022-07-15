@@ -1,5 +1,5 @@
 
-<table class="table table-dark table-danger mb-3 col-6 ">
+<table class="table table-info mb-3 col-6 ">
 <div class="col">
 <div class="mb-3 col-4">
 	
@@ -18,19 +18,19 @@
 			<th class="col-2">Nombre proveedor</th>
 			<th class="col-1">direccion</th>
 			<th class="col-2">telefono</th>
-			<td class="table-warning col-1">Editar</td>
-			<td class="table-danger col-1">Eliminar</td>
+			<th class="col-1">Editar</th>
+			<th class="col-1">Eliminar</th>
 			</tr>';
 
 	while ($row = $datos->fetch_array()){
 
 		echo '<tr>';
-		echo '<td class="table-info">',$row['id_proveedor'] ,'</td>';
-		echo '<td class="table-info">',$row['nombre_proveedor'] ,'</td>';
-		echo '<td class="table-info">',$row['direccion'] ,'</td>';
-		echo '<td class="table-info">',$row['telefono'] ,'</td>';
-		echo '<td class="table-warning"><button class="btn btn-warning  "><a href=\"index.php?accion=editar&&id_producto=$row[id_producto]\">Editar</a></button></td>';
-		echo '<td class="table-danger"><button class="btn btn-danger  position-center"><a href=\"index.php?accion=eliminar&&id_producto=$row[id_producto]\">Eliminar</a></button></td>';
+		echo '<th class="table-light">',$row['id_proveedor'] ,'</th>';
+		echo '<td class="table-light">',$row['nombre_proveedor'] ,'</td>';
+		echo '<td class="table-light">',$row['direccion'] ,'</td>';
+		echo '<td class="table-light">',$row['telefono'] ,'</td>';
+		echo "<td class='table-light'><button class='btn btn-primary'><a href=\"index.php?accion=editar&&id_proveedor=$row[id_proveedor]\">Editar</a></button></td>";
+		echo "<td class='table-light'><button class='btn btn-danger  position-center'><a href=\"index.php?accion=eliminar&&id_proveedor=$row[id_proveedor]\">Eliminar</a></button></td>";
 		echo '</tr>';
 
 		
@@ -42,8 +42,9 @@
 </div>
 </table>
 <style>
-	*{
-		color: while;
+	
+	a{
+		color: white;
 	}
 </style>
 
